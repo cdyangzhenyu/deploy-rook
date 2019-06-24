@@ -1,0 +1,6 @@
+#/bin/bash
+
+export AWS_HOST=rook-ceph-rgw.rook-ceph
+export AWS_ENDPOINT=10.1.0.15:30260
+export AWS_ACCESS_KEY_ID=UK2CNC5WACG6WIRXXP6M
+export AWS_SECRET_ACCESS_KEY=JEL4R2zaoDmanv6cLLNhwvzEkaD5ZAxvFhWKV7D5
