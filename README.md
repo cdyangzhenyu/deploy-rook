@@ -38,3 +38,9 @@ source rook-oss-s3.sh
  s3cmd get s3://rookbucket/rookObj /tmp/rookObj-download --no-ssl --host=${AWS_ENDPOINT} --host-bucket=
  cat /tmp/rookObj-download
 ```
+
+安装共享文件系统cephfs
+进入ceph-fs目录，先修改cephfs-sc.yaml中的地址为ceph mon的svc clusterip, 然后执行：
+```bash
+sh install.sh
+```

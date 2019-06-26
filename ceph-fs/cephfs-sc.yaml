@@ -1,0 +1,12 @@
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+   name: rook-ceph-fs
+provisioner: ceph.com/cephfs
+parameters:
+  #monitors: rook-ceph-mon-a.rook-ceph:6789
+  monitors: 10.105.241.86:6789
+  adminId: admin
+  adminSecretName: rook-ceph-secret-admin
+  adminSecretNamespace: rook-ceph
+
